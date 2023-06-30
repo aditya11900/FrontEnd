@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewFile | starting</title>
+    <style>
+        .myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+    </style>
 </head>
 <body>
     <!--some elemets in html -->
@@ -20,6 +27,17 @@
 @paragraph
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit et sunt iusto corrupti, <br>hic dolor odit molestias praesentium consectetur ipsa.</p>
     <hr>
+    @span
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam nulla harum dolores ullam, velit quam quibusdam atque itaque dolore iste <strong>nostrum</strong> tempora <span style="color: red; font-size: large;">minima</span> provident tempore quis deserunt consectetur excepturi molestias sint, ratione ducimus quos labore! Veniam molestias magni nemo.</p>
+    <hr>
+    @div
+    <div style="background-color: aquamarine;">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi possimus totam distinctio consequatur, tempora deleniti laborum autem dignissimos excepturi provident in obcaecati esse temporibus eos neque quis non, molestias sint et quidem, inventore reprehenderit? Velit nesciunt atque perspiciatis consequuntur eos.</p>
+    </div>
+<div class="myDiv" >
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi possimus totam distinctio consequatur, tempora deleniti laborum autem dignissimos excepturi provident in obcaecati esse temporibus eos neque quis non, molestias sint et quidem, inventore reprehenderit? Velit nesciunt atque perspiciatis consequuntur eos.</p>
+</div>
+        <hr>
 <!-- anchor tag-->
 @AnchorTag
 <ul>
@@ -41,6 +59,14 @@
         <li>three</li>
     </ul>
     <hr>
+
+    @image tag
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="w3schools">
+    <hr>
+    @subAndSup
+    <p>2<sup>5</sup></p>
+    <p>h<sub>2</sub>o</p>
+<hr>
     @table
     <table>
         <tr>
@@ -59,12 +85,69 @@
             <td>6</td>
         </tr>
     </table>
+    @another example
+<table border="1">
+<thead>
+    <th>Student Id</th>
+    <th>Student Name</th>
+    <th>Male</th>
+    <th>Age</th>
+</thead>
+<tbody>
+    <tr>
+        <td>1234</td>
+        <td>Bill</td>
+        <td>Male</td>
+        <td>17</td>
+    </tr>
+    <tr>
+        <td>1234</td>
+        <td>Bill</td>
+        <td>Male</td>
+        <td rowspan="3">17</td>
+    </tr>
+    <tr>
+        <td>1234</td>
+        <td>Bill</td>
+        <td>Male</td>
+        
+    </tr>
+    <tr>
+        <td>1234</td>
+        <td>Bill</td>
+        <td>Male</td>
+        
+    </tr>
+</tbody>
+</table>
+<strong>@another example of table with row and colSpan</strong>
+<table border="1">
+    <tr>
+        <td>column 1</td>
+        <td>column 2</td>
+        <td>column 3</td>
+    </tr>
+   
+    <tr>
+    <td rowspan="2">Row 1 cell 1</td>
+    <td>Row 1 cell 2</td>
+    <td>row 1 cell 3</td>
+    </tr>
+    
+    <tr>
+        <td>Row 2 cell 1</td>
+        <td>Row 2 cell 2</td>
+    </tr>
+    <tr >
+        <td colspan="3"> Row 3 cell 1</td>
+        
+    </tr>
+    
+</table>
     <hr>
-    @image tag
-    <img src="" alt="">
-    <hr>
-    <p>2<sup>5</sup></p>
-    <p>h<sub>2</sub>o</p>
-
+@forms
+<form action="">
+    
+</form>
 </body>
 </html>
